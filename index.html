@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tokyo Grid Studio</title>
 <meta name="p:domain_verify" content="ac5ec8e36e179360d73f957ddfb92e3a"/>
-<meta name="description" content="Tokyo Grid Studio — Japanese-inspired digital art for Samsung The Frame TV, available on Etsy.">
+<meta name="description" content="Tokyo Grid Studio — Japanese-inspired digital art for art-mode TVs such as Samsung The Frame, available on Etsy.">
 <style>
   :root {
     color-scheme: light dark;
@@ -34,33 +34,69 @@
   a { color: inherit; overflow-wrap: anywhere; }
   .shop { display: inline-block; margin: 8px 0 0; padding: 10px 20px; border: 1px solid var(--text); border-radius: 4px; text-decoration: none; }
   .shop:hover { background: var(--text); color: var(--bg); }
+  .collections { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 24px; margin: 16px 0 12px; }
+  .collection { margin: 0; }
+  .collection img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 2px; }
+  .collection figcaption { margin-top: 8px; }
+  .collection h3 { font-size: 1rem; font-weight: 600; margin: 0; }
+  .collection p { color: var(--muted); font-size: 0.9rem; margin: 2px 0 0; line-height: 1.6; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+  @media (max-width: 560px) { .collections { grid-template-columns: 1fr; } }
   .ja { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule); font-family: "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif; }
   footer { max-width: 720px; margin: 64px auto 0; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
+  footer p { margin: 0 0 8px; }
+  .trademark { font-size: 0.8rem; line-height: 1.6; }
 </style>
 </head>
 <body>
 <main>
   <h1>Tokyo Grid Studio</h1>
-  <p class="lead">Japanese-inspired digital art for Samsung The Frame TV.</p>
+  <p class="lead">Japanese-inspired digital art for art-mode TVs such as Samsung The Frame.</p>
 
   <h2>Collections</h2>
-  <ul>
-    <li>Quiet Fuji Collection</li>
-    <li>Quiet Heron Collection</li>
-    <li>Japanese Mineral Abstract Collection</li>
-    <li>Quiet Ryujin Collection</li>
-  </ul>
+  <div class="collections">
+    <figure class="collection">
+      <a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60102029"><img src="/images/quiet-fuji.jpg" srcset="/images/quiet-fuji-800.jpg 800w, /images/quiet-fuji.jpg 1600w" sizes="(max-width: 560px) 100vw, 348px" width="1600" height="900" alt="Snow-capped Mount Fuji with gold leaf strokes on its slopes, rising above misty blue foothills against a deep indigo sky"></a>
+      <figcaption>
+        <h3><a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60102029">Quiet Fuji Collection</a></h3>
+        <p>Mount Fuji in mist, indigo and gold.</p>
+      </figcaption>
+    </figure>
+    <figure class="collection">
+      <a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60456281"><img src="/images/quiet-heron.jpg" srcset="/images/quiet-heron-800.jpg 800w, /images/quiet-heron.jpg 1600w" sizes="(max-width: 560px) 100vw, 348px" width="1600" height="900" alt="A white heron standing in still water before a gold leaf panel, with bamboo and a single red maple leaf on a pale silver ground" loading="lazy"></a>
+      <figcaption>
+        <h3><a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60456281">Quiet Heron Collection</a></h3>
+        <p>White herons in contemporary Nihonga style.</p>
+      </figcaption>
+    </figure>
+    <figure class="collection">
+      <a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60456285"><img src="/images/japanese-mineral-abstract.jpg" srcset="/images/japanese-mineral-abstract-800.jpg 800w, /images/japanese-mineral-abstract.jpg 1600w" sizes="(max-width: 560px) 100vw, 348px" width="1600" height="900" alt="Abstract painting of deep indigo mineral pigment crossed by a diagonal vein of textured silver, with a pale gold area in the upper left" loading="lazy"></a>
+      <figcaption>
+        <h3><a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60456285">Japanese Mineral Abstract Collection</a></h3>
+        <p>Abstract textures of mineral pigment and metal leaf.</p>
+        <p>Moonlit Sumi Ridge is also in this section.</p>
+      </figcaption>
+    </figure>
+    <figure class="collection">
+      <a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60582049"><img src="/images/quiet-ryujin.jpg" srcset="/images/quiet-ryujin-800.jpg 800w, /images/quiet-ryujin.jpg 1600w" sizes="(max-width: 560px) 100vw, 348px" width="1600" height="900" alt="A gold Japanese dragon coiling through stylized clouds on a dark indigo ground, in the style of a gold leaf screen painting" loading="lazy"></a>
+      <figcaption>
+        <h3><a href="https://www.etsy.com/shop/TokyoGridStudio?section_id=60582049">Quiet Ryujin Collection</a></h3>
+        <p>The Japanese dragon god in gold and sumi ink.</p>
+      </figcaption>
+    </figure>
+  </div>
 
   <h2>Shop</h2>
   <p>All artworks are sold as digital downloads on Etsy.</p>
-  <p><a class="shop" href="https://www.etsy.com/shop/TokyoGridstudio">Visit our Etsy shop</a></p>
+  <p class="links"><a class="shop" href="https://www.etsy.com/shop/TokyoGridStudio">Visit our Etsy shop</a> <a href="https://www.pinterest.com/TokyoGridStudio/">Follow us on Pinterest</a></p>
 
   <section lang="ja" class="ja">
-    <p>Tokyo Grid Studio は、Samsung The Frame TV 向けの日本をテーマにしたデジタルアートを制作しています。作品は Etsy ショップでダウンロード販売しています。</p>
+    <p>Tokyo Grid Studio は、Samsung The Frame などのアートモード対応テレビ向けに、日本をテーマにしたデジタルアートを制作しています。作品は Etsy ショップでダウンロード販売しています。</p>
   </section>
 </main>
 <footer>
-  <a href="/privacy/">Privacy Policy / プライバシーポリシー</a>
+  <p><a href="/privacy/">Privacy Policy / プライバシーポリシー</a></p>
+  <p class="trademark">Samsung and The Frame are trademarks of Samsung Electronics. Tokyo Grid Studio is not affiliated with Samsung.</p>
 </footer>
 </body>
 </html>
